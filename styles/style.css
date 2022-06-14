@@ -69,6 +69,7 @@ body {
 }
 
 .card__ratings {
+    align-self: stretch;
     display: flex;
     justify-content: space-between;
     color: hsl(216, 12%, 54%);
