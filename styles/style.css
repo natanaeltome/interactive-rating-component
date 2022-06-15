@@ -100,3 +100,28 @@ input:checked+label {
     color: hsl(25, 97%, 53%);
     cursor: pointer;
 }
+
+.card__thanks {
+    align-items: center;
+}
+
+.card__icon--thanks {
+    margin-bottom: 1rem;
+}
+
+.card__selected-rating {
+    font-size: 15px;
+    text-align: center;
+    line-height: 0rem;
+    color: hsl(25, 97%, 53%);
+    height: 1.5rem;
+    border-style: none;
+    border-radius: 20px;
+    padding: 15px 15px;
+    margin-bottom: 1.5rem;
+    background-color: hsl(213, 19%, 18%)
+}
+
+.card__description--thanks {
+    text-align: center;
+}

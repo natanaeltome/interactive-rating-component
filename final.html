@@ -4,16 +4,36 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>./scripts/retrieve.js</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body onload="loadData()">
-        <p id="final"></p>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main class="card card__thanks">
+            <div class="card__icon--thanks">
+                <img src="./assets/illustration-thank-you.svg" alt="thanks icon">
+            </div>
 
-        <script src="./scripts/retrieve.js" async defer></script>
+            <div>
+                <button class="card__selected-rating" id="final"></button>
+            </div>
+
+            <h1 class="card__title">Thank you</h1>
+
+            <p class="card__description card__description--thanks">We appreciate you taking the time to give a rating.
+                If you ever need more
+                support, don't hesitate to get in touch!</p>
+
+
+        </main>
+
+        <script src="./scripts/retrieve.js"></script>
     </body>
 
 </html>
