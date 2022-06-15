@@ -17,9 +17,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
     line-height: 1.6;
     background-color: hsl(216, 12%, 8%);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input:checked+label {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
 }
 
 .card {
@@ -29,22 +38,33 @@ body {
     display: flex;
     padding: 2rem;
     border-radius: 20px;
-    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(213, 16%, 11%));
 }
 
 .card__circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.8rem;
+    width: 2.8rem;
     border-radius: 50%;
     margin-bottom: 2rem;
     background-color: hsl(212, 16%, 21%);
 }
 
+.card__circle--star {
+    max-width: 35%;
+    height: auto;
+}
+
+.card__circle--rating:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
 .card__title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: hsl(0, 0%, 100%);
     margin-bottom: 0.5rem;
 }
@@ -55,11 +75,18 @@ body {
     margin-bottom: 2rem;
 }
 
+.card__ratings {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(216, 12%, 54%);
+}
+
 .card__button {
     font-size: 0.9rem;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.15em;
     align-self: center;
     width: 100%;
     height: 2.5rem;
@@ -68,10 +95,8 @@ body {
     background-color: hsl(25, 97%, 53%);
 }
 
-.card__ratings {
-    align-self: stretch;
-    display: flex;
-    justify-content: space-between;
-    color: hsl(216, 12%, 54%);
-
+.card__button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
 }
