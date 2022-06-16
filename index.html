@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Evaluate</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/style.css">
@@ -26,30 +26,30 @@
                 appreciated to help us
                 improve our offering!</p>
 
-            <form action="/Vanilla/final.html" id="rating" class="card__ratings">
-                <input type="radio" name="radio" id="opt1" value="1" required>
+            <form action="./final.html" id="rating" class="card__ratings">
+                <input type="radio" name="feedback" id="opt1" value="1" required>
                 <label for="opt1" class="card__circle card__circle--rating">
                     <span>1</span>
                 </label>
-                <input type="radio" name="radio" id="opt2" value="2" required>
+                <input type="radio" name="feedback" id="opt2" value="2" required>
                 <label for="opt2" class="card__circle card__circle--rating">
                     <span>2</span>
                 </label>
-                <input type="radio" name="radio" id="opt3" value="3" required>
+                <input type="radio" name="feedback" id="opt3" value="3" required>
                 <label for="opt3" class="card__circle card__circle--rating">
                     <span>3</span>
                 </label>
-                <input type="radio" name="radio" id="opt4" value="4" required>
+                <input type="radio" name="feedback" id="opt4" value="4" required>
                 <label for="opt4" class="card__circle card__circle--rating">
                     <span>4</span>
                 </label>
-                <input type="radio" name="radio" id="opt5" value="5" required>
+                <input type="radio" name="feedback" id="opt5" value="5" required>
                 <label for="opt5" class="card__circle card__circle--rating">
                     <span>5</span>
                 </label>
 
             </form>
-            <button type="submit" form="rating" class="card__button" onclick="storeData()">SUBMIT</button>
+            <button type="submit" form="rating" class="card__submit-button" onclick="storeData()">SUBMIT</button>
         </main>
 
         <script src="./scripts/data.js"></script>

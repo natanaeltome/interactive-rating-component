@@ -1,3 +1,18 @@
+:root {
+    --color-bg-primary: hsl(216, 12%, 8%);
+    --color-card-bg-primary: hsl(213, 19%, 18%);
+    --color-card-bg-secondary: hsl(213, 16%, 11%);
+    --color-card-highlight: hsl(25, 97%, 53%);
+    --color-card-text-primary: hsl(0, 0%, 100%);
+    --color-card-text-secondary: hsl(217, 12%, 63%);
+    --color-card-text-terciary: hsl(216, 12%, 54%);
+
+    --font-size-card-paragraph: 15px;
+    --font-size-card-title: 1.6rem;
+    --font-size-submit-text: 0.9rem;
+
+}
+
 *,
 *::before,
 *::after {
@@ -19,16 +34,18 @@ body {
     align-items: center;
     min-height: 90vh;
     line-height: 1.6;
-    background-color: hsl(216, 12%, 8%);
+    background-color: var(--color-bg-primary);
 }
+
+/* Evaluate */
 
 input[type="radio"] {
     display: none;
 }
 
 input:checked+label {
-    background-color: hsl(217, 12%, 63%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--color-card-text-secondary);
+    color: var(--color-card-text-primary);
 }
 
 .card {
@@ -38,7 +55,7 @@ input:checked+label {
     display: flex;
     padding: 2rem;
     border-radius: 20px;
-    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(213, 16%, 11%));
+    background-image: linear-gradient(var(--color-card-bg-primary), var(--color-card-bg-secondary));
 }
 
 .card__circle {
@@ -54,37 +71,36 @@ input:checked+label {
 
 .card__circle--star {
     max-width: 35%;
-    height: auto;
-}
-
-.card__circle--rating:hover {
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
 }
 
 .card__title {
-    font-size: 1.6rem;
-    color: hsl(0, 0%, 100%);
+    font-size: var(--font-size-card-title);
+    color: var(--color-card-text-primary);
     margin-bottom: 0.5rem;
 }
 
 .card__description {
-    font-size: 15px;
-    color: hsl(217, 12%, 63%);
+    font-size: var(--font-size-card-paragraph);
+    color: var(--color-card-text-secondary);
     margin-bottom: 2rem;
 }
 
 .card__ratings {
-    align-self: stretch;
     display: flex;
     justify-content: space-between;
-    color: hsl(216, 12%, 54%);
+    align-self: stretch;
+    color: var(--color-card-text-terciary);
 }
 
-.card__button {
-    font-size: 0.9rem;
-    color: hsl(0, 0%, 100%);
+.card__circle--rating:hover {
+    background-color: var(--color-card-highlight);
+    color: var(--color-card-text-primary);
+    cursor: pointer;
+}
+
+.card__submit-button {
+    font-size: var(--font-size-submit-text);
+    color: var(--color-card-text-primary);
     font-weight: 700;
     letter-spacing: 0.15em;
     align-self: center;
@@ -92,14 +108,16 @@ input:checked+label {
     height: 2.5rem;
     border-style: none;
     border-radius: 20px;
-    background-color: hsl(25, 97%, 53%);
+    background-color: var(--color-card-highlight);
 }
 
-.card__button:hover {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(25, 97%, 53%);
+.card__submit-button:hover {
+    background-color: var(--color-card-text-primary);
+    color: var(--color-card-highlight);
     cursor: pointer;
 }
+
+/* Feedback */
 
 .card__thanks {
     align-items: center;
@@ -110,16 +128,16 @@ input:checked+label {
 }
 
 .card__selected-rating {
-    font-size: 15px;
+    font-size: var(--font-size-card-paragraph);
     text-align: center;
     line-height: 0rem;
-    color: hsl(25, 97%, 53%);
     height: 1.5rem;
-    border-style: none;
-    border-radius: 20px;
     padding: 15px 15px;
     margin-bottom: 1.5rem;
-    background-color: hsl(213, 19%, 18%)
+    border-style: none;
+    border-radius: 20px;
+    color: var(--color-card-highlight);
+    background-color: var(--color-card-bg-primary);
 }
 
 .card__description--thanks {
