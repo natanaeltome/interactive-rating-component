@@ -24,6 +24,7 @@ Users should be able to:
 ### Screenshots
 
 ![](./assets/screenshot.png)
+![](./assets/screenshot2.png)
 
 ### Built with
 
@@ -33,4 +34,4 @@ Users should be able to:
 
 ### Live Site URL
 
-- [https://your-live-site-url.com](https://your-live-site-url.com)
+- [https://interactive-rc.netlify.app/](https://interactive-rc.netlify.app/)
